@@ -57,14 +57,14 @@
   <div id="imageContainer"></div>
 
   <div id="timer">Timer: 0 seconds</div>
-  <div id="bestTime">Best Time: <span id="bestTimeValue">${getBestTime()} seconds</span></div>
+  <div id="bestTime">Best Time: 0 seconds</div>
 
   <script>
     const imageContainer = document.getElementById('imageContainer');
     const startButton = document.getElementById('startButton');
     const resetButton = document.getElementById('resetButton');
     const timerElement = document.getElementById('timer');
-    const bestTimeElement = document.getElementById('bestTimeValue');
+    const bestTimeElement = document.getElementById('bestTime');
 
     let shuffledImages;
     let currentImageIndex = 0;
@@ -109,8 +109,11 @@
       imageContainer.innerHTML = '';
 
       // Update the timer display
-      timerElement.textContent = `Timer: 0 second(s)`;
-}
+      updateTimer();
+
+      // Display "Best Time: 0 seconds"
+      bestTimeElement.textContent = 'Best Time: 0 seconds';
+    }
 
     function displayImages() {
       // Display the shuffled images
