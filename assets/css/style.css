@@ -1,0 +1,62 @@
+/* Styles for Body */
+body {
+    background-color: rgb(40, 40, 40);
+    color: rgb(233, 229, 215);
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Playpen Sans", "Lato";
+}
+
+/* Style for headings */
+h2 {
+    font-size: smaller;
+    margin-bottom: 20px;
+}
+
+/* Styles for numbers divs in the game area */
+.numbers-game-div {
+    max-width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.number-div {
+    min-width: 17%;
+    padding: 10px 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Styles for start and reset buttons */
+.game-button {
+    font-size: x-large;
+}
+
+.start-button:hover {
+    background-color: rgb(0, 110, 0);
+}
+
+.start-button {
+    margin-right: 8%;
+    padding: 5px 15px;
+    background-color: rgb(0, 48, 0);
+    color: rgb(239, 238, 231);
+}
+
+.reset-button:hover {
+    background-color: rgb(167, 0, 33);
+}
+
+.reset-button {
+    margin-left: 8%;
+    padding: 5px 15px;
+    background-color: rgb(106, 0, 21);
+    color: rgb(239, 238, 231);
+}
